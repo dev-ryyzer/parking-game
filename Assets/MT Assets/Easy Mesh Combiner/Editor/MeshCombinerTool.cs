@@ -3622,7 +3622,7 @@ namespace MTAssets.EasyMeshCombiner.Editor
                 }
             }
 
-            tex.Resize(newWidth, newHeight);
+            tex.Reinitialize(newWidth, newHeight);
             tex.SetPixels(newColors);
             tex.Apply();
 

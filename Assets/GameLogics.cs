@@ -24,7 +24,8 @@ public class GameLogics : MonoBehaviour
     {
         Renderer ParkingPlace_parrender = ParkingPlace.GetComponent<Renderer>();
         ParkingPlace_parrender.material.color = Color.green;
-
+        
+ 
 
         ParkButton.SetActive(true);
         if (other.gameObject.tag == "ParkingPlace")
@@ -49,6 +50,6 @@ public class GameLogics : MonoBehaviour
     {
         SuccessPanel.SetActive(true);
         ParkButton.SetActive(false);
-
+        Coins_Manager.IncreaseCoins(20);
     }
 }
